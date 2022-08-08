@@ -4,6 +4,8 @@
 
 NOTE: This build is only a prototype and in early development, and does not represent the final product.
 
+Link: https://mangkorn.github.io/Infiblue/Game/index.html
+
 <br> </br> 
 Executive Summary
 ______________________
