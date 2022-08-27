@@ -24,6 +24,11 @@
 		<input placeholder="Enter text..." id="htmlinput"><button onclick="sendBackMessage()">Send to Unity</button>
 	  </div>
 	  <!--Added UI END-->
+	  <!--Added UI START-->
+	  <div>
+		<input placeholder="Enter land ID..." id="htmlinput2"><button onclick="sendLandID()">Teleport Player</button>
+	  </div>
+	  <!--Added UI END-->
     </div>
 	
 	<!--Added Script START-->
@@ -32,6 +37,16 @@
 			var message = document.getElementById("htmlinput").value;
 			console.log("Sending message to Unity: " + message);
 			myGameInstance.SendMessage("WebManager", "ReceiveFromWeb", message);
+		}
+	</script>
+	<!--Added Script END-->
+	
+	<!--Added Script START-->
+	<script>
+		function sendLandID(){
+			var message = document.getElementById("htmlinput2").value;
+			console.log("Sending ID to game: " + message);
+			myGameInstance.SendMessage("WebManager", "MoveToLand", message);
 		}
 	</script>
 	<!--Added Script END-->
